@@ -1,0 +1,22 @@
+{
+  "name": "DXBaseLib",
+  "version": "0.1.0",
+  "summary": "A short description of DXBaseLib.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Jackdx/DXBaseLib",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Jackdx": "jack.deng@ubtrobot.com"
+  },
+  "source": {
+    "git": "https://github.com/Jackdx/DXBaseLib.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "DXBaseLib/Classes/**/*"
+}

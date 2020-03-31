@@ -1,0 +1,6 @@
+framework module Pods_DXBaseLib_Example {
+  umbrella header "Pods-DXBaseLib_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

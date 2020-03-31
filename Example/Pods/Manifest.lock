@@ -1,0 +1,16 @@
+PODS:
+  - DXBaseLib (0.1.0)
+
+DEPENDENCIES:
+  - DXBaseLib (from `../`)
+
+EXTERNAL SOURCES:
+  DXBaseLib:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  DXBaseLib: 7ad5f4dab5cb6da5af25895e368640b5775a3e9a
+
+PODFILE CHECKSUM: 1192f5bd13efff63251e088601d729161e2e5877
+
+COCOAPODS: 1.8.4

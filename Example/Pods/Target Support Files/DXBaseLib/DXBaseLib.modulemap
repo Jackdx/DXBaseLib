@@ -1,0 +1,6 @@
+framework module DXBaseLib {
+  umbrella header "DXBaseLib-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/Jackdx/DXBaseLib'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Jackdx' => 'jack.deng@ubtrobot.com' }
+  s.author           = { 'Jackdx' => '871077947@qq.com' }
   s.source           = { :git => 'https://github.com/Jackdx/DXBaseLib.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
