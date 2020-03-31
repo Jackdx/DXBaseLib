@@ -9,7 +9,7 @@
     "file": "LICENSE"
   },
   "authors": {
-    "Jackdx": "jack.deng@ubtrobot.com"
+    "Jackdx": "871077947@qq.com"
   },
   "source": {
     "git": "https://github.com/Jackdx/DXBaseLib.git",
@@ -18,5 +18,10 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "DXBaseLib/Classes/**/*"
+  "source_files": "DXBaseLib/Classes/**/*",
+  "resource_bundles": {
+    "DXBaseLib": [
+      "DXBaseLib/Assets/**/*"
+    ]
+  }
 }

@@ -10,6 +10,7 @@
 #endif
 #endif
 
+#import "UIAlertController+DX.h"
 
 FOUNDATION_EXPORT double DXBaseLibVersionNumber;
 FOUNDATION_EXPORT const unsigned char DXBaseLibVersionString[];
