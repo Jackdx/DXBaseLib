@@ -5,8 +5,8 @@ platform :ios, '8.0'
 target 'DXBaseLib_Example' do
   pod 'DXBaseLib', :path => '../'
   
-# pod 'Masonry'  代码适配框架，支持链式编程
- 
+# pod 'Masonry' # 代码适配框架，支持链式编程
+# pod 'CHTCollectionViewWaterfallLayout'  #  瀑布流
  
  
  

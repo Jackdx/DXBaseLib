@@ -7,6 +7,8 @@
 
 #import "DXCommonApiStudy.h"
 
+//NSString *const XXXNotification = @"XXXNotification";
+
 @implementation DXCommonApiStudy
 
 - (void)studyApi
@@ -58,6 +60,21 @@
     NSLog(@"data=%@",data); // @"a"转化为NSData为0x61(十进制是97) NSData是字符对应的ascii码
     NSString *str = [[NSString alloc] initWithData:data encoding:NSUTF8StringEncoding];
     NSLog(@"str=%@",str);
+#endif
+    
+#if 0
+    // 代码计算字符串高度
+   NSString *info = @"但是公司的高度是广东省公司的广东省高速度来开个大帅哥多撒谎个爱好就跟他说噶三公司噶是的刚好是我哥如果黑暗如果坏都干撒降低公司及嘎斯进欧冠赛欧结果就赛欧国际韶关；可垃圾费；阿尔加两块；三个身高萨嘎干撒的公司的高度上收到公司的公司都给ID搜狗破is打个屁偶是东莞IP手动皮革是滴哦苹果是滴哦苹果度搜皮为欧公司的漂漂是第三个是干撒噶是的噶虽然刚撒旦个撒公司的公司的高度";
+    CGFloat strWidth = 200;
+    CGSize infoSize = CGSizeMake(strWidth, MAXFLOAT);
+    NSDictionary *dic = @{NSFontAttributeName : [UIFont systemFontOfSize:17.f ]};
+      //默认的
+    CGRect infoRect =   [info boundingRectWithSize:infoSize options:NSStringDrawingUsesLineFragmentOrigin attributes:dic context:nil];
+      // 参数1: 自适应尺寸,提供一个宽度,去自适应高度
+      // 参数2:自适应设置 (以行为矩形区域自适应,以字体字形自适应)
+      // 参数3:文字属性,通常这里面需要知道是字体大小
+      // 参数4:绘制文本上下文,做底层排版时使用,填nil即可
+    ceil(infoRect.size.height);
 #endif
    
 }

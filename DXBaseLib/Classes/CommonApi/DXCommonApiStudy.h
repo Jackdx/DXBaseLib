@@ -7,6 +7,8 @@
 //  平时常用的api
 #import <Foundation/Foundation.h>
 
+//extern NSString *const XXXNotification; // 通知的名字
+
 NS_ASSUME_NONNULL_BEGIN
 
 @interface DXCommonApiStudy : NSObject
