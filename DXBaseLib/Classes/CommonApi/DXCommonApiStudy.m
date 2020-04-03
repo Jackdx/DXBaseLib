@@ -76,6 +76,16 @@
       // 参数4:绘制文本上下文,做底层排版时使用,填nil即可
     ceil(infoRect.size.height);
 #endif
+#if 0
+    // 沙盒路径
+    NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
+    NSLog(@"%@",path);
+    
+    NSString *path1 = NSHomeDirectory();
+    path1 = [path1 stringByAppendingPathComponent:@"Documents"];
+    NSLog(@"%@",path1);
+    
+#endif
    
 }
 
