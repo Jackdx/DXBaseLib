@@ -80,13 +80,28 @@
     // 沙盒路径
     NSString *path = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES).firstObject;
     NSLog(@"%@",path);
-    
+    // 第2种方法  得到沙盒路径
     NSString *path1 = NSHomeDirectory();
     path1 = [path1 stringByAppendingPathComponent:@"Documents"];
     NSLog(@"%@",path1);
     
 #endif
-   
+#if 0
+//  UIViewController的 automaticallyAdjustsScrollViewInsets属性。iOS11废弃了
+//    现在用UIScrollView的contentInsetAdjustmentBehavior代替
+    /**
+     automaticallyAdjustsScrollViewInsets的设置只对滚动视图有效，对普通的view无效；对普通view而言，UINavigationBar与UITabBar半透明(translucent)：会被遮挡；不透明，不会被遮挡。如果两个都是默认情况下，则滚动视图的内容不会被遮挡，普通的view会被遮挡，这是最常见的情况。
+     */
+#endif
+#if 0
+    // afn上传图片的方法使用
+    [manager POST:urlPath parameters:param constructingBodyWithBlock:^(id<AFMultipartFormData>  _Nonnull formData) {
+      [formData appendPartWithFileData:imageData
+            name:name
+        fileName:name
+        mimeType:@"image/jpeg"];
+    } progress:nil success:nil failure:nil];
+#endif
 }
 
 @end

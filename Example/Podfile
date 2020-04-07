@@ -7,6 +7,9 @@ target 'DXBaseLib_Example' do
   
 # pod 'Masonry' # 代码适配框架，支持链式编程
 # pod 'CHTCollectionViewWaterfallLayout'  #  瀑布流
+# pod 'AFNetWorking' #  最常用的网络请求框架
+# pod 'MJRefresh' #  上下拉刷新框架
+# pod 'SDWebImage' #  图片加载框架
  
  
  
