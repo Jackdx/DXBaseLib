@@ -102,6 +102,27 @@
         mimeType:@"image/jpeg"];
     } progress:nil success:nil failure:nil];
 #endif
+#if 0
+    // 网络判断检测代码
+    //开启检测
+    [[AFNetworkReachabilityManager sharedManager] startMonitoring];
+    
+    [[AFNetworkReachabilityManager sharedManager] setReachabilityStatusChangeBlock:^(AFNetworkReachabilityStatus status) {
+        if(status == AFNetworkReachabilityStatusReachableViaWWAN || status == AFNetworkReachabilityStatusReachableViaWiFi)
+        {
+            NSLog(@"有网");
+        }
+        else if(status == AFNetworkReachabilityStatusNotReachable)
+        {
+            NSLog(@"无网");
+        }
+    }];
+    // 网络状态变更的通知
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(networkStatusChange:) name:AFNetworkingReachabilityDidChangeNotification object:nil];
+    BOOL isReachable = [AFNetworkReachabilityManager sharedManager].isReachable;
+    
+    
+#endif
 }
 
 @end

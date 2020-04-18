@@ -12,6 +12,7 @@
 
 #import "UIAlertController+DX.h"
 #import "DXCommonApiStudy.h"
+#import "SQLStringModel.h"
 
 FOUNDATION_EXPORT double DXBaseLibVersionNumber;
 FOUNDATION_EXPORT const unsigned char DXBaseLibVersionString[];
