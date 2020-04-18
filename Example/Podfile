@@ -5,11 +5,11 @@ platform :ios, '8.0'
 target 'DXBaseLib_Example' do
   pod 'DXBaseLib', :path => '../'
   
-# pod 'Masonry' # 代码适配框架，支持链式编程
-# pod 'CHTCollectionViewWaterfallLayout'  #  瀑布流
-# pod 'AFNetWorking' #  最常用的网络请求框架
-# pod 'MJRefresh' #  上下拉刷新框架
-# pod 'SDWebImage' #  图片加载框架
+# pod 'Masonry' # 代码适配框架，支持链式编程 (TimLiu-iOS收录)
+# pod 'CHTCollectionViewWaterfallLayout'  #  瀑布流 (TimLiu-iOS收录)
+# pod 'AFNetWorking' #  最常用的网络请求框架 (TimLiu-iOS收录)
+# pod 'MJRefresh' #  上下拉刷新框架 (TimLiu-iOS收录)
+# pod 'SDWebImage' #  图片加载框架 (TimLiu-iOS收录)
  
  
  
