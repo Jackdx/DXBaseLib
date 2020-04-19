@@ -123,6 +123,60 @@
     
     
 #endif
+    
+#if 0
+    // 键盘处理
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(keyboardWillChangeFrame:) name:UIKeyboardWillChangeFrameNotification object:nil];
+    
+#endif
+#if 0
+    // transform
+    UIView *view;
+    view.transform = CGAffineTransformMakeTranslation(100, 100);
+    view.transform = CGAffineTransformMakeScale(0.5, 0.5);
+    view.transform = CGAffineTransformMakeRotation(M_PI_2);
+    CGAffineTransform transform = CGAffineTransformMakeTranslation(100, 100);
+    CGAffineTransform scaleTransform = CGAffineTransformScale(transform, 0.5, 0.5);
+    CGAffineTransformIdentity;
+#endif
 }
+
+#if 0
+- (void)layoutSubviews
+{
+    [super layoutSubviews];
+    // 图片在上，文字在下的按钮效果
+    CGFloat buttonW = self.frame.size.width;
+    CGFloat buttonH = self.frame.size.height;
+    
+    CGFloat imageH = buttonW - 10;
+    self.imageView.frame = CGRectMake(0, 0, buttonW, imageH);
+    self.titleLabel.frame = CGRectMake(0, imageH, buttonW, buttonH - imageH);
+}
+#endif
+
+#if 1
+- (void)keyboardWillChangeFrame:(NSNotification *)note
+{
+    // 取出键盘最终的frame
+    CGRect rect = [note.userInfo[UIKeyboardFrameEndUserInfoKey] CGRectValue];
+    // 取出键盘弹出需要花费的时间
+    double duration = [note.userInfo[UIKeyboardAnimationDurationUserInfoKey] doubleValue];
+    // 偏移值
+    double offset_y = [UIScreen mainScreen].bounds.size.height - rect.size.height;
+    [UIView animateWithDuration:duration animations:^{
+        UIView *view;
+        view.transform = CGAffineTransformMakeTranslation(0, -offset_y);
+    }];
+    
+    UIView *theView;
+    UIView *selfView;
+     CGFloat theView_maxY = CGRectGetMaxY(theView.frame);
+    if (theView_maxY > rect.origin.y) // 判断控件是否被键盘遮挡
+    {
+        selfView.transform = CGAffineTransformMakeTranslation(0, -(theView_maxY-rect.origin.y));
+    }
+}
+#endif
 
 @end
