@@ -155,7 +155,7 @@
 }
 #endif
 
-#if 1
+#if 0
 - (void)keyboardWillChangeFrame:(NSNotification *)note
 {
     // 取出键盘最终的frame
@@ -175,6 +175,10 @@
     if (theView_maxY > rect.origin.y) // 判断控件是否被键盘遮挡
     {
         selfView.transform = CGAffineTransformMakeTranslation(0, -(theView_maxY-rect.origin.y));
+    }
+    else
+    {
+        selfView.transform = CGAffineTransformIdentity;
     }
 }
 #endif
