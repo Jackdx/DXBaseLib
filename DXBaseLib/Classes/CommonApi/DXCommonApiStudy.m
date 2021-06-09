@@ -166,11 +166,13 @@
     double offset_y = [UIScreen mainScreen].bounds.size.height - rect.size.height;
     [UIView animateWithDuration:duration animations:^{
         UIView *view;
+        // 针对控制器的整个view，如self.view
         view.transform = CGAffineTransformMakeTranslation(0, -offset_y);
     }];
     
     UIView *theView;
     UIView *selfView;
+    // 针对单个控件的键盘处理
      CGFloat theView_maxY = CGRectGetMaxY(theView.frame);
     if (theView_maxY > rect.origin.y) // 判断控件是否被键盘遮挡
     {
